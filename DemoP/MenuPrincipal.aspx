@@ -14,7 +14,7 @@
         <h2>Menu <img src="img/menu.png" </h2>
         <ul>
             <li><a href="#">Usuarios</a></li>
-
+            <h1>UN MENSAJE NUEVO</h1>
             <li class="noticia"><a href="#">Noticias</a>
                 <ul class="submenu">
                     <li><a href="#">Consultar noticias</a></li>
