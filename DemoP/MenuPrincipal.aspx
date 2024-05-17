@@ -16,6 +16,7 @@
             <li><a href="#">Usuarios</a></li>
             <h1>UN MENSAJE NUEVO</h1>
             <h1>PONGO OTRO H1</h1>
+            <h1>Hola soy el quesa Hola</h1>
             <li class="noticia"><a href="#">Noticias</a>
                 <ul class="submenu">
                     <li><a href="#">Consultar noticias</a></li>
