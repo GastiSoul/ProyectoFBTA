@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-	<link rel="stylesheet" href="Scripts/Principal.js">
+	<link rel="stylesheet" href="Content/Principal.css?v=1.0"/>
 </head>
 
 <body>
@@ -14,14 +14,11 @@
         <h2>Menu <img src="img/menu.png" </h2>
         <ul>
             <li><a href="#">Usuarios</a></li>
-            <h1>UN MENSAJE NUEVO</h1>
-            <h1>PONGO OTRO H1</h1>
-            <h1>Hola soy el quesa Hola</h1>
             <li class="noticia"><a href="#">Noticias</a>
                 <ul class="submenu">
                     <li><a href="#">Consultar noticias</a></li>
                     <li><a href="#">Eliminar noticias</a></li>
-                    <li><a href="#">Crear noticias</a></li>
+                    <li><a href="WebForm2.aspx">Crear noticias</a></li>
                     <li><a href="#">Modificar noticias</a></li>
                 </ul>
             </li>
@@ -30,6 +27,6 @@
         </ul>
     </div>
 
-      <script src="Principal.js"></script>
+      <script src="Scripts/Principal.js"></script>
 </body>
 </html>

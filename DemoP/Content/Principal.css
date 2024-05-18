@@ -76,12 +76,18 @@
 .submenu {
     display: none;
     position: absolute;
-    top: 0; /* Ajustamos la posición superior para alinear el menú con el elemento padre */
-    left: 100%; /* Colocamos el menú a la derecha del elemento padre */
+    top:0;
+    left: 100%;
     background-color: rgba(5, 33, 51, 0.98);
-    min-width: 150px;
+    min-width: 200px;
     z-index: 1;
     list-style: none;
+    border-left: 1px solid black;
 }
+
+.submenu li{
+    width:100%;
+}
+
 
 
