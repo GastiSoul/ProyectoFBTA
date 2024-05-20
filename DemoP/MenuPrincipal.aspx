@@ -13,14 +13,15 @@
     <div class="barra">
         <h2>Menu <img src="img/menu.png" </h2>
         <ul>
-            <li><a href="#">Usuarios</a></li>
-            <li class="noticia"><a href="#">Noticias</a>
+            <li><a href="#">Usuarios</a>
                 <ul class="submenu">
-                    <li><a href="#">Consultar noticias</a></li>
-                    <li><a href="#">Eliminar noticias</a></li>
-                    <li><a href="WebForm2.aspx">Crear noticias</a></li>
-                    <li><a href="#">Modificar noticias</a></li>
+                    <li><a href="WebForm2.aspx">Registrar usuario</a></li>
+                    <li><a href="#">Gestionar usuarios</a></li>
                 </ul>
+            </li>
+
+            <li class="noticia"><a href="#">Noticias</a>
+                
             </li>
 
             <li><a href="#">Cierre de sesion</a></li>
