@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <form id="form1" runat="server">
     <div class="barra">
         <h2>Menu <img src="img/menu.png" </h2>
         <ul>
@@ -29,5 +30,7 @@
     </div>
 
       <script src="Scripts/Principal.js"></script>
+        <asp:Button ID="Button1" runat="server" Text="Button" />
+    </form>
 </body>
 </html>
