@@ -10,12 +10,13 @@
 </head>
 
 <body>
+    <form id="form1" runat="server">
     <div class="barra">
         <h2>Menu <img src="img/menu.png" </h2>
         <ul>
             <li><a href="#">Usuarios</a>
                 <ul class="submenu">
-                    <li><a href="WebForm2.aspx">Registrar usuario</a></li>
+                    <li><a href="RegistroUsuario.aspx">Registrar usuario</a></li>
                     <li><a href="#">Gestionar usuarios</a></li>
                 </ul>
             </li>
@@ -29,5 +30,11 @@
     </div>
 
       <script src="Scripts/Principal.js"></script>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="Button1" runat="server" style="margin-left: 300px" Text="Button" />
+        </p>
+    </form>
 </body>
 </html>
