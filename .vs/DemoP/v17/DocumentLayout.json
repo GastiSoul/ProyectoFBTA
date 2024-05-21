@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|c:\\users\\hylia\\downloads\\proyectonoticias\\proyectofbta\\demop\\menuprincipal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\menuprincipal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuPrincipal.aspx",
+              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\MenuPrincipal.aspx",
+              "RelativeDocumentMoniker": "DemoP\\MenuPrincipal.aspx",
+              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\MenuPrincipal.aspx",
+              "RelativeToolTip": "DemoP\\MenuPrincipal.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-21T15:50:46.113Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
