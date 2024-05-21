@@ -14,14 +14,18 @@
     <div class="barra">
         <h2>Menu <img src="img/menu.png" </h2>
         <ul>
-            <li><a href="#">Usuarios</a>
+            <li class="noticia"><a>Usuarios</a>
                 <ul class="submenu">
                     <li><a href="RegistroUsuario.aspx">Registrar usuario</a></li>
                     <li><a href="#">Gestionar usuarios</a></li>
                 </ul>
             </li>
 
-            <li class="noticia"><a href="#">Noticias</a>
+            <li class="noticia2"><a>Noticias</a>
+                    <ul class="submenu">
+                    <li><a href="#">Registrar noticia</a></li>
+                    <li><a href="#">Gestionar noticias</a></li>
+                </ul>
                 
             </li>
 
@@ -32,9 +36,8 @@
       <script src="Scripts/Principal.js"></script>
         <p>
             &nbsp;</p>
-        <p>
-            <asp:Button ID="Button1" runat="server" style="margin-left: 300px" Text="Button" />
-        </p>
+        <p style="margin-left: 40px">
+            hola</p>
     </form>
 </body>
 </html>
