@@ -26,7 +26,6 @@
 .barra h2{
     text-align:left;
     color:white;
-    padding: 7px;
     padding-bottom:7px;
     font-size:0px;
 }
@@ -43,7 +42,6 @@
 }
 
 .barra:hover h2{
-    padding:15px;
     font-size:35px;
 }
 
@@ -76,7 +74,7 @@
 .submenu {
     display: none;
     position: absolute;
-    top:0;
+    top:104px;
     left: 100%;
     background-color: rgba(5, 33, 51, 0.98);
     min-width: 200px;
