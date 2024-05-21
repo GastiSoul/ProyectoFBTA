@@ -13,7 +13,17 @@
     });
 
     // Ocultamos el submenu cuando el cursor sale de la barra de navegación
-    submenu.addEventListener('mouseleave', function () {
-        submenu.style.display = 'none';
+    noticias.addEventListener('mouseout', function (event) {
+        // Verificamos si el cursor ha salido del área del menú principal
+        if (!noticias.contains(event.relatedTarget)) {
+            submenu.style.display = 'none';
+        }
+    });
+
+    submenu.addEventListener('mouseout', function (event) {
+        // Verificamos si el cursor ha salido del área del submenu
+        if (!submenu.contains(event.relatedTarget)) {
+            submenu.style.display = 'none';
+        }
     });
 });

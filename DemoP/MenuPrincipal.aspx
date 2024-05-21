@@ -13,7 +13,7 @@
     <div class="barra">
         <h2>Menu <img src="img/menu.png" </h2>
         <ul>
-            <li><a href="#">Usuarios</a>
+            <li class="noticia"><a href="#">Usuarios</a>
                 <ul class="submenu">
                     <li><a href="WebForm2.aspx">Registrar usuario</a></li>
                     <li><a href="#">Gestionar usuarios</a></li>
