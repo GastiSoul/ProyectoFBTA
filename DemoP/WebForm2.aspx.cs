@@ -47,6 +47,7 @@ namespace DemoP
                     command.Parameters.AddWithValue("@Matricula", matricula);
                     command.Parameters.AddWithValue("@Password", contrasena);
                     command.Parameters.AddWithValue("@Permisos", permiso);
+                    /* womp womp */
 
                     if (Regex.IsMatch(matricula, @"^\d+$"))
                     {
