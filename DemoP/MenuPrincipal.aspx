@@ -16,7 +16,7 @@
         <ul>
             <li><a href="#">Usuarios</a>
                 <ul class="submenu">
-                    <li><a href="WebForm2.aspx">Registrar usuario</a></li>
+                    <li><a href="RegistroUsuario.aspx">Registrar usuario</a></li>
                     <li><a href="#">Gestionar usuarios</a></li>
                 </ul>
             </li>
