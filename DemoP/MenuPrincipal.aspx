@@ -21,7 +21,7 @@
                 </ul>
             </li>
 
-            <li class="noticia"><a href="#">Noticias</a>
+            <li class="noticia2"><a>Noticias</a>
                     <ul class="submenu">
                     <li><a href="#">Registrar noticia</a></li>
                     <li><a href="#">Gestionar noticias</a></li>
