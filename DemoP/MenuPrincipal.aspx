@@ -22,6 +22,10 @@
             </li>
 
             <li class="noticia"><a href="#">Noticias</a>
+                    <ul class="submenu">
+                    <li><a href="#">Registrar noticia</a></li>
+                    <li><a href="#">Gestionar noticias</a></li>
+                </ul>
                 
             </li>
 
