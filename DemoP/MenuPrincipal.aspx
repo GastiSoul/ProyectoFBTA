@@ -32,8 +32,8 @@
       <script src="Scripts/Principal.js"></script>
         <p>
             &nbsp;</p>
-        <p>
-            &nbsp;</p>
+        <p style="margin-left: 40px">
+            hola</p>
     </form>
 </body>
 </html>
