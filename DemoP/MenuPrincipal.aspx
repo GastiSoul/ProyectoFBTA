@@ -14,7 +14,7 @@
     <div class="barra">
         <h2>Menu <img src="img/menu.png" </h2>
         <ul>
-            <li><a href="#">Usuarios</a>
+            <li class="noticia"><a>Usuarios</a>
                 <ul class="submenu">
                     <li><a href="RegistroUsuario.aspx">Registrar usuario</a></li>
                     <li><a href="#">Gestionar usuarios</a></li>
