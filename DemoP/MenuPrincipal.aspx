@@ -33,8 +33,7 @@
         <p>
             &nbsp;</p>
         <p>
-            <asp:Button ID="Button1" runat="server" style="margin-left: 300px" Text="Button" />
-        </p>
+            &nbsp;</p>
     </form>
 </body>
 </html>
