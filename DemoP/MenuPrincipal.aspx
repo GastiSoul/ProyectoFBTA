@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
         <div class="header"></div>
         <div class="barra">
-            <h2>Menu <img src="img/menu.png" alt="Menu Icon"/></h2>
+            <h2>Menu </h2>
             <ul>
                 <li class="noticia">
                     <a href="#">Usuarios</a>
