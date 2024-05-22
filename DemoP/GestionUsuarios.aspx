@@ -9,6 +9,16 @@
 </head>
 
 <body>
-        <p style="margin-left: 40px">hola</p>
+        <form id="form1" runat="server">
+            <p style="margin-left: 40px">GESTIÓN DE USUARIOS</p>
+            <p style="margin-left: 40px">Nombre<asp:TextBox ID="name" runat="server" style="margin-left: 12px" Width="122px"></asp:TextBox>
+            </p>
+            <p style="margin-left: 40px">Contraseña<asp:TextBox ID="contra" runat="server" style="margin-left: 13px"></asp:TextBox>
+            </p>
+            <p style="margin-left: 40px">
+                <asp:CheckBox ID="permissions" runat="server" Text="Permisos" />
+            </p>
+            <asp:Button ID="Guardar" runat="server" style="margin-left: 44px" Text="Guardar" Width="120px" />
+        </form>
 </body>
 </html>

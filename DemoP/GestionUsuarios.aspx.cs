@@ -57,6 +57,7 @@ namespace DemoP
                             if (rowsAffected > 0)
                             {
                                 ClientScript.RegisterStartupScript(this.GetType(), "registroExitoso", "alert('Registro exitoso');", true);
+                                Response.Redirect("MenuPrincipal.aspx");
                             }
                             else
                             {
@@ -75,5 +76,6 @@ namespace DemoP
                 }
             }
         }
+
     }
 }

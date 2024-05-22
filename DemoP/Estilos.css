@@ -1,0 +1,30 @@
+﻿body {
+}
+
+.center {
+    max-width: 500px;
+    margin: auto;
+    align-content: center;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+img {
+    width: 25%;
+    height: auto;
+    vertical-align: middle;
+    align-content: center;
+    margin-left: 23px;
+}
