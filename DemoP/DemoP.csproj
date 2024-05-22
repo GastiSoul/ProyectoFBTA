@@ -158,6 +158,13 @@
     <Compile Include="MenuPrincipal.aspx.designer.cs">
       <DependentUpon>MenuPrincipal.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GestionUsuarios.aspx.cs">
+      <DependentUpon>GestionUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionUsuarios.aspx.designer.cs">
+      <DependentUpon>GestionUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RegistroUsuario.aspx.cs">
       <DependentUpon>RegistroUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -175,7 +182,7 @@
     <Content Include="Content\RegistroUsuario.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="GestionUsuarios.html" />
+    <Content Include="GestionUsuariosprueba.html" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="HtmlPage1.html" />
@@ -190,6 +197,7 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Content\Principal.css" />
+    <Content Include="GestionUsuarios.aspx" />
     <Content Include="RegistroUsuario.aspx" />
     <Content Include="Scripts\Principal.js" />
     <Content Include="Scripts\bootstrap.js" />
