@@ -1,30 +1,60 @@
-﻿body {
+﻿/* Estilos generales */
+body {
+    background-color: #006633; /* Verde de la UABC */
+    color: #FFD700; /* Dorado de la UABC */
+    margin: 0;
+    padding: 0;
 }
 
 .center {
     max-width: 500px;
     margin: auto;
-    align-content: center;
-}
-
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    display: table-cell;
-    vertical-align: middle;
+    text-align: center;
+    padding-top: 20px;
 }
 
 img {
     width: 25%;
     height: auto;
-    vertical-align: middle;
-    align-content: center;
-    margin-left: 23px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los controles de formulario */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #FFD700; /* Dorado de la UABC */
+    background-color: #FFFFFF; /* Blanco */
+    color: #000000; /* Negro */
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #FFD700; /* Dorado de la UABC */
+    color: #006633; /* Verde de la UABC */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    button[type="submit"]:hover {
+        background-color: #D4AF37; /* Dorado claro */
+        color: #006633; /* Verde de la UABC */
+    }
+
+/* Estilos para la barra de navegación */
+.footer {
+    background-color: #006633; /* Verde de la UABC */
+    color: #FFD700; /* Dorado de la UABC */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
