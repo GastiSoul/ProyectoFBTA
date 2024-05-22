@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|c:\\users\\hylia\\downloads\\proyectonoticias\\proyectofbta\\demop\\gestionusuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\gestionusuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\demop\\registrousuario.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\registrousuario.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\demop\\registrousuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\registrousuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|c:\\users\\hylia\\downloads\\proyectonoticias\\proyectofbta\\demop\\menuprincipal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\menuprincipal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|c:\\users\\hylia\\downloads\\proyectonoticias\\proyectofbta\\demop\\registrousuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\registrousuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\demop\\gestionusuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\gestionusuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\demop\\gestionusuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\gestionusuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +30,65 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RegistroUsuario.aspx",
+              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\RegistroUsuario.aspx",
+              "RelativeDocumentMoniker": "DemoP\\RegistroUsuario.aspx",
+              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\RegistroUsuario.aspx",
+              "RelativeToolTip": "DemoP\\RegistroUsuario.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-22T01:42:42.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegistroUsuario.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\RegistroUsuario.aspx.cs",
+              "RelativeDocumentMoniker": "DemoP\\RegistroUsuario.aspx.cs",
+              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\RegistroUsuario.aspx.cs",
+              "RelativeToolTip": "DemoP\\RegistroUsuario.aspx.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T01:41:44.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GestionUsuarios.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\GestionUsuarios.aspx.cs",
+              "RelativeDocumentMoniker": "DemoP\\GestionUsuarios.aspx.cs",
+              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\GestionUsuarios.aspx.cs",
+              "RelativeToolTip": "DemoP\\GestionUsuarios.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T01:40:05.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GestionUsuarios.aspx",
+              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\GestionUsuarios.aspx",
+              "RelativeDocumentMoniker": "DemoP\\GestionUsuarios.aspx",
+              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\GestionUsuarios.aspx",
+              "RelativeToolTip": "DemoP\\GestionUsuarios.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-22T01:18:11.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MenuPrincipal.aspx",
               "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\MenuPrincipal.aspx",
               "RelativeDocumentMoniker": "DemoP\\MenuPrincipal.aspx",
@@ -36,36 +98,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-05-22T01:21:39.179Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GestionUsuarios.aspx",
-              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\GestionUsuarios.aspx",
-              "RelativeDocumentMoniker": "DemoP\\GestionUsuarios.aspx",
-              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\GestionUsuarios.aspx",
-              "RelativeToolTip": "DemoP\\GestionUsuarios.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-22T01:18:11.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegistroUsuario.aspx",
-              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\RegistroUsuario.aspx",
-              "RelativeDocumentMoniker": "DemoP\\RegistroUsuario.aspx",
-              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\RegistroUsuario.aspx",
-              "RelativeToolTip": "DemoP\\RegistroUsuario.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-22T00:53:26.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }
