@@ -65,7 +65,7 @@
 <body>
     <form id="form1" runat="server">
         <div class="sidebar">
-            <a href="Inicio.aspx">Inicio</a>
+            <a href="MenuPrincipal.aspx">Inicio</a>
             <a href="AgregarNoticia.aspx">Agregar Noticia</a>
             <a href="EditarNoticia.aspx">Editar Noticia</a>
             <a href="EliminarNoticia.aspx">Eliminar Noticia</a>
