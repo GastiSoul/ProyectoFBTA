@@ -4,7 +4,7 @@ using System.Web.UI;
 
 namespace pruebalogin2
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class InicioSesion : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,7 +24,8 @@ namespace pruebalogin2
             try
             {
                 // Cadena de conexión a la base de datos SQL Server
-                string connectionString = "Server=DISCORDIA;Database=Queso;Trusted_Connection=True;";
+                string connectionString = "Server=DESKTOP-MSP2P8P;Database=Queso;Trusted_Connection=True;";
+
 
                 // Consulta SQL para verificar las credenciales del usuario
                 string query = "SELECT COUNT(*) FROM ULogin WHERE UserId=@UserId AND Password=@Password";

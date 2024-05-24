@@ -11,7 +11,7 @@ namespace pruebalogin2
 {
 
 
-    public partial class Login
+    public partial class InicioSesion
     {
 
         /// <summary>
