@@ -26,7 +26,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="MenuPrincipal.aspx">Cierre de sesión</a>
+                    <a href="InicioSesion.aspx">Cierre de sesión</a>
                 </li>
             </ul>
         </div>

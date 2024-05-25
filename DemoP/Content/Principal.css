@@ -11,73 +11,66 @@
 }
 
 .barra {
-    background-color: #006633; /* Verde UABC */
+    background-color: #006633; 
     padding: 10px;
     display: flex;
-    justify-content: space-between; /* Distribuye espacio entre elementos */
+    justify-content: space-between; 
     align-items: center;
 }
 
-    .barra h2 {
-        color: #ffffff;
-        margin: 0;
-    }
+.barra h2 {
+    color: #ffffff;
+    margin: 0;
+}
 
-    .barra ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
+.barra ul {
+    list-style-type: none;
+    display: flex;
+}
 
-        .barra ul li {
-            position: relative;
-            margin-right: 20px;
-        }
+.barra ul li {
+    position: relative;
+}
 
-            .barra ul li a {
-                color: #ffffff;
-                text-decoration: none;
-                padding: 10px 15px;
-                display: block;
-            }
+.barra ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: block;
+}
 
-                .barra ul li a:hover {
-                    background-color: #ffcc33; /* Dorado UABC */
-                    border-radius: 5px;
-                }
+.barra ul li a:hover {
+    background-color: #ffcc33;
+    border-radius: 5px;
+}
 
-            .barra ul li ul.submenu {
-                display: none;
-                position: absolute;
-                background-color: #ffffff;
-                border: 1px solid #cccccc;
-                border-radius: 5px;
-                padding: 10px;
-                top: 100%;
-                left: 0;
-                z-index: 1000;
-            }
+.barra ul li ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    top: 100%;
+    z-index: 1000;
+}
 
-                .barra ul li ul.submenu li {
-                    margin: 0;
-                }
+.barra ul li:hover ul.submenu {
+    display: block;
+}
 
-                    .barra ul li ul.submenu li a {
-                        color: #006633;
-                        padding: 5px 10px;
-                        white-space: nowrap;
-                    }
+.barra ul li ul.submenu li a {
+    color: #006633;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
 
-                        .barra ul li ul.submenu li a:hover {
-                            background-color: #ffcc33; /* Dorado UABC */
-                            color: #ffffff;
-                            border-radius: 5px;
-                        }
+.barra ul li ul.submenu li a:hover {
+    background-color: #ffcc33;
+    color: #ffffff;
+    border-radius: 5px;
+}
 
-            .barra ul li:hover ul.submenu {
-                display: block;
-            }
 
 .container {
     padding: 20px;
