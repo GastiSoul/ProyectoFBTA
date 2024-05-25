@@ -9,16 +9,16 @@
     <form id="form1" runat="server">
         <div class="header"></div>
         <div class="barra">
-            <h2>Menu </h2>
+            <h2>Menu</h2>
             <ul>
-                <li class="noticia">
+                <li>
                     <a href="#">Usuarios</a>
                     <ul class="submenu">
                         <li><a href="RegistroUsuario.aspx">Registrar usuario</a></li>
                         <li><a href="GestionUsuarios.aspx">Gestionar usuarios</a></li>
                     </ul>
                 </li>
-                <li class="noticia2">
+                <li>
                     <a href="#">Noticias</a>
                     <ul class="submenu">
                         <li><a href="RegistrarNoticia.aspx">Registrar noticia</a></li>
