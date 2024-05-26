@@ -24,7 +24,7 @@ namespace pruebalogin2
             try
             {
                 // Cadena de conexión a la base de datos SQL Server
-                string connectionString = "Server=DESKTOP-MSP2P8P;Database=Queso;Trusted_Connection=True;";
+                string connectionString = "Server=Localhost;Database=Queso;Trusted_Connection=True;";
 
 
                 // Consulta SQL para verificar las credenciales del usuario
