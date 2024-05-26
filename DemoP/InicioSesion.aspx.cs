@@ -24,11 +24,11 @@ namespace pruebalogin2
             try
             {
                 // Cadena de conexión a la base de datos SQL Server
-                string connectionString = "Server=DESKTOP-MSP2P8P;Database=Queso;Trusted_Connection=True;";
+                string connectionString = "Server=Localhost;Database=Queso;Trusted_Connection=True;";
 
 
                 // Consulta SQL para verificar las credenciales del usuario
-                string query = "SELECT COUNT(*) FROM ULogin WHERE UserId=@UserId AND Password=@Password";
+                string query = "SELECT COUNT(*) FROM Usuarios WHERE Correo=@Correo AND Contraseña=@Contraseña";
 
                 // Crear una conexión SQL
                 using (SqlConnection con = new SqlConnection(connectionString))
@@ -37,8 +37,8 @@ namespace pruebalogin2
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         // Establecer los parámetros de la consulta SQL (evita la inyección SQL)
-                        cmd.Parameters.AddWithValue("@UserId", TxtUser.Text);
-                        cmd.Parameters.AddWithValue("@Password", TxtPassword.Text);
+                        cmd.Parameters.AddWithValue("@Correo", TxtUser.Text);
+                        cmd.Parameters.AddWithValue("@Contraseña", TxtPassword.Text);
 
                         // Abrir la conexión a la base de datos
                         con.Open();
