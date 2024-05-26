@@ -14,7 +14,7 @@
      <li>
 
     <li>
-      <label for="nameU">Nombre:</label>
+      <label for="nameU">Nombre:</label>x
         <asp:TextBox id="nameU" runat="server"></asp:TextBox>
     </li>
 

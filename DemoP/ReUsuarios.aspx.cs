@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 
 namespace DemoP
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class ReUsuarios : System.Web.UI.Page
     {
         SqlConnection coneccion;
         protected void Page_Load(object sender, EventArgs e)
@@ -32,20 +32,25 @@ namespace DemoP
 
         protected void Guardar_Click(object sender, EventArgs e)
         {
-            string matricula = name.Text;
-            string contrasena = contra.Text;
-            bool permiso = permissions.Checked;
+            string nombre = nameU.Text;
+            string matricula = matriU.Text;
+            string email = emailU.Text;
+            string contra = contraU.Text;
+            bool permiso = permiU.Checked;
 
-            string query = "INSERT INTO usuarios (matricula, password, permisos) VALUES (@Matricula, @Password, @Permisos)";
+            string query = "INSERT INTO Usuarios (Nombre, Matricula, Correo, Contraseña, Permisos) " +
+                "VALUES (@Nombre, @Matricula, @Correo, @Contraseña, @Permisos)";
 
-            using (coneccion = new SqlConnection("Data Source=Localhost;Initial Catalog=PF;Integrated Security=True"))
+            using (coneccion = new SqlConnection("Data Source=DESKTOP-4VRPQJF;Initial Catalog=Queso;Integrated Security=True"))
             {
                 coneccion.Open();
 
                 using (SqlCommand command = new SqlCommand(query, coneccion))
                 {
+                    command.Parameters.AddWithValue("@Nombre", nombre);
                     command.Parameters.AddWithValue("@Matricula", matricula);
-                    command.Parameters.AddWithValue("@Password", contrasena);
+                    command.Parameters.AddWithValue("@Correo", email);
+                    command.Parameters.AddWithValue("@Contraseña", contra);
                     command.Parameters.AddWithValue("@Permisos", permiso);
 
                     if (Regex.IsMatch(matricula, @"^\d+$"))
