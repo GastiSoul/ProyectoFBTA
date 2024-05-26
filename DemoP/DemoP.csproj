@@ -132,6 +132,13 @@
     <Compile Include="empleados.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="GestUsuario.aspx.cs">
+      <DependentUpon>GestUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestUsuario.aspx.designer.cs">
+      <DependentUpon>GestUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -157,13 +164,6 @@
     </Compile>
     <Compile Include="MenuPrincipal.aspx.designer.cs">
       <DependentUpon>MenuPrincipal.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GestionUsuarios.aspx.cs">
-      <DependentUpon>GestionUsuarios.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GestionUsuarios.aspx.designer.cs">
-      <DependentUpon>GestionUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="InicioSesion.aspx.cs">
       <DependentUpon>InicioSesion.aspx</DependentUpon>
@@ -197,6 +197,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="GestionUsuariosprueba.html" />
+    <Content Include="GestUsuario.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="HtmlPage1.html" />
@@ -211,7 +212,6 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Content\Principal.css" />
-    <Content Include="GestionUsuarios.aspx" />
     <Content Include="ReUsuarios.aspx" />
     <Content Include="Scripts\Principal.js" />
     <Content Include="Scripts\bootstrap.js" />

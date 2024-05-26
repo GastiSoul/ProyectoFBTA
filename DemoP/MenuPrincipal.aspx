@@ -14,8 +14,8 @@
                 <li>
                     <a href="#">Usuarios</a>
                     <ul class="submenu">
-                        <li><a href="RegistroUsuario.aspx">Registrar usuario</a></li>
-                        <li><a href="GestionUsuarios.aspx">Gestionar usuarios</a></li>
+                        <li><a href="ReUsuarios.aspx">Registrar usuario</a></li>
+                        <li><a href="GestUsuario.aspx">Gestionar usuarios</a></li>
                     </ul>
                 </li>
                 <li>

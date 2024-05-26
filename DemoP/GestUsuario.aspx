@@ -1,8 +1,12 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GestUsuario.aspx.cs" Inherits="DemoP.GestUsuario" %>
+
+<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Gestión de Usuarios</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,7 +41,7 @@
             align-items: center;
         }
         .header-container img {
-            width: 100px; /* Ajusta el tamaño según sea necesario */
+            width: 100px;
             height: auto;
             margin-right: 20px;
         }
@@ -61,7 +65,9 @@
             background-color: #f2f2f2;
         }
     </style>
+
 </head>
+
 <body>
     <form id="form1" runat="server">
         <div class="sidebar">
@@ -69,7 +75,7 @@
             <a href="AgregarUsuario.aspx">Agregar Usuario</a>
             <a href="EditarUsuario.aspx">Editar Usuario</a>
             <a href="EliminarUsuario.aspx">Eliminar Usuario</a>
-            <a href="VerUsuarios.aspx">Ver Usuarios</a>
+            <a href="GestionUsuarios.aspx">Ver Usuarios</a>
         </div>
         <div class="content">
             <div class="header-container">
@@ -80,42 +86,11 @@
                 </div>
             </div>
             <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nombre</th>
-                            <th>Email</th>
-                            <th>Permisos</th>
-                            <th>Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Usuario de ejemplo 1</td>
-                            <td>usuario1@ejemplo.com</td>
-                            <td><input type="checkbox" id="permiso1" name="permiso1"></td>
-                            <td>
-                                <a href="EditarUsuario.aspx?id=1">Editar</a> |
-                                <a href="EliminarUsuario.aspx?id=1">Eliminar</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Usuario de ejemplo 2</td>
-                            <td>usuario2@ejemplo.com</td>
-                            <td><input type="checkbox" id="permiso2" name="permiso2"></td>
-                            <td>
-                                <a href="EditarUsuario.aspx?id=2">Editar</a> |
-                                <a href="EliminarUsuario.aspx?id=2">Eliminar</a>
-                            </td>
-                        </tr>
-                        <!-- Más filas según sea necesario -->
-                    </tbody>
-                </table>
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="True">
+                </asp:GridView>
             </div>
         </div>
+    </form>
     </form>
 </body>
 </html>
