@@ -165,13 +165,6 @@
     <Compile Include="GestionUsuarios.aspx.designer.cs">
       <DependentUpon>GestionUsuarios.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RegistroUsuario.aspx.cs">
-      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RegistroUsuario.aspx.designer.cs">
-      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
-    </Compile>
     <Compile Include="InicioSesion.aspx.cs">
       <DependentUpon>InicioSesion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -185,6 +178,13 @@
     </Compile>
     <Compile Include="GestionarNoticias.aspx.designer.cs">
       <DependentUpon>GestionarNoticias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReUsuarios.aspx.cs">
+      <DependentUpon>ReUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReUsuarios.aspx.designer.cs">
+      <DependentUpon>ReUsuarios.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -212,7 +212,7 @@
     </Content>
     <Content Include="Content\Principal.css" />
     <Content Include="GestionUsuarios.aspx" />
-    <Content Include="RegistroUsuario.aspx" />
+    <Content Include="ReUsuarios.aspx" />
     <Content Include="Scripts\Principal.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

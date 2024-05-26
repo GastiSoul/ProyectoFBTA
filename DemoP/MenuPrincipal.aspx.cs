@@ -11,7 +11,13 @@ namespace DemoP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                if (Request.QueryString["registro"] == "exitoso")
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "registroExitoso", "alert('Registro exitoso');", true);
+                }
+            }
         }
     }
 }
