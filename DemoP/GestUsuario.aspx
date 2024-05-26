@@ -86,7 +86,59 @@
                 </div>
             </div>
             <div class="table-container">
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="True">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing" OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowUpdating="GridView1_RowUpdating">
+                    <Columns>
+                        <asp:TemplateField HeaderText="Nombre">
+                            <ItemTemplate>
+                                <%# Eval("Nombre") %>
+                            </ItemTemplate>
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txtNombre" runat="server" Text='<%# Bind("Nombre") %>' />
+                            </EditItemTemplate>
+                        </asp:TemplateField>
+
+                         <asp:TemplateField HeaderText="Matrícula">
+
+                            <ItemTemplate>
+                                <%# Eval("Matricula") %>
+                            </ItemTemplate>
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txtMatricula" runat="server" Text='<%# Bind("Matricula") %>' />
+                            </EditItemTemplate>
+
+                        </asp:TemplateField>
+
+                        <asp:TemplateField HeaderText="Correo">
+                            <ItemTemplate>
+                                <%# Eval("Correo") %>
+                            </ItemTemplate>
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txtCorreo" runat="server" Text='<%# Bind("Correo") %>' />
+                            </EditItemTemplate>
+                        </asp:TemplateField>
+        
+                        <asp:TemplateField HeaderText="Contraseña">
+                            <ItemTemplate>
+                                <%# Eval("Contraseña") %>
+                            </ItemTemplate>
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txtContraseña" runat="server" Text='<%# Bind("Contraseña") %>' />
+                            </EditItemTemplate>
+                        </asp:TemplateField>
+
+                        <asp:TemplateField HeaderText="Permisos">
+                            <ItemTemplate>
+                                <%# Eval("Permisos") %>
+                            </ItemTemplate>
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txtPermisos" runat="server" Text='<%# Bind("Permisos") %>' />
+                            </EditItemTemplate>
+                        </asp:TemplateField>
+                        
+                        <asp:CommandField ShowEditButton="True" />
+                        <asp:ButtonField CommandName="Delete" Text="Eliminar" />
+                    
+                    </Columns>
                 </asp:GridView>
             </div>
         </div>
