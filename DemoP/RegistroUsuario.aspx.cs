@@ -38,7 +38,7 @@ namespace DemoP
 
             string query = "INSERT INTO usuarios (matricula, password, permisos) VALUES (@Matricula, @Password, @Permisos)";
 
-            using (coneccion = new SqlConnection("Data Source=DESKTOP-4VRPQJF;Initial Catalog=PF;Integrated Security=True"))
+            using (coneccion = new SqlConnection("Data Source=Localhost;Initial Catalog=PF;Integrated Security=True"))
             {
                 coneccion.Open();
 
