@@ -20,8 +20,8 @@ namespace DemoP
             string categoria = categoriaU.SelectedValue;
             string imagen = imagenU.Text;
 
-            string query = "INSERT INTO Noticias (Titulo, Autor, Cuerpo, FechaPublicacion, Categoria, Imagen) " +
-                "VALUES (@Titulo, @Autor, @Cuerpo, @FechaPublicacion, @Categoria, @Imagen)";
+            string query = "INSERT INTO Noticia (Titulo, Autor, Cuerpo, FechaPublicacion, Categoria, Imagen) " +
+                "VALUES ( @Titulo, @Autor, @Cuerpo, @FechaPublicacion, @Categoria, @Imagen)";
 
             using (conexion = new SqlConnection("Data Source=localhost;Initial Catalog=Queso;Integrated Security=True"))
             {
