@@ -11,7 +11,7 @@ namespace DemoP
 {
 
 
-    public partial class GestionarNoticias
+    public partial class GestNotis
     {
 
         /// <summary>

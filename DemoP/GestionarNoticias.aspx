@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GestionarNoticias.aspx.cs" Inherits="DemoP.GestionarNoticias" %>
+
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -37,7 +39,7 @@
             align-items: center;
         }
         .header-container img {
-            width: 100px; /* Ajusta el tamaño según sea necesario */
+            width: 100px;
             height: auto;
             margin-right: 20px;
         }
@@ -65,11 +67,10 @@
 <body>
     <form id="form1" runat="server">
         <div class="sidebar">
-            <a href="MenuPrincipal.aspx">Inicio</a>
-            <a href="AgregarNoticia.aspx">Agregar Noticia</a>
-            <a href="EditarNoticia.aspx">Editar Noticia</a>
-            <a href="EliminarNoticia.aspx">Eliminar Noticia</a>
-            <a href="VerNoticias.aspx">Ver Noticias</a>
+            <a href="MenuPrincipal.aspx">Volver al Inicio</a>
+            <a href="RegistrarNoticias.aspx">Registrar Noticia</a>
+            <a href="GestUsuario.aspx">Ir a Gestión de Usuarios</a>
+            <a href="GestNotis.aspx">Publicar Noticia</a>
         </div>
         <div class="content">
             <div class="header-container">
@@ -80,37 +81,23 @@
                 </div>
             </div>
             <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Título</th>
-                            <th>Fecha</th>
-                            <th>Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Noticia de ejemplo 1</td>
-                            <td>2024-05-22</td>
-                            <td>
-                                <a href="EditarNoticia.aspx?id=1">Editar</a> |
-                                <a href="EliminarNoticia.aspx?id=1">Eliminar</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Noticia de ejemplo 2</td>
-                            <td>2024-05-21</td>
-                            <td>
-                                <a href="EditarNoticia.aspx?id=2">Editar</a> |
-                                <a href="EliminarNoticia.aspx?id=2">Eliminar</a>
-                            </td>
-                        </tr>
-                        <!-- Más filas según sea necesario -->
-                    </tbody>
-                </table>
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing" OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowUpdating="GridView1_RowUpdating">
+                    <Columns>
+                        <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" />
+                        <asp:BoundField DataField="Titulo" HeaderText="Título" />
+                        <asp:BoundField DataField="FechaPublicacion" HeaderText="Fecha" />
+                        <asp:TemplateField HeaderText="Acciones">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="EditButton" runat="server" CommandName="Edit" Text="Editar" />
+                                <asp:LinkButton ID="DeleteButton" runat="server" CommandName="Delete" Text="Eliminar" OnClientClick="return confirm('¿Está seguro que desea eliminar esta noticia?');" />
+                            </ItemTemplate>
+                            <EditItemTemplate>
+                                <asp:LinkButton ID="UpdateButton" runat="server" CommandName="Update" Text="Actualizar" />
+                                <asp:LinkButton ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancelar" />
+                            </EditItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                </asp:GridView>
             </div>
         </div>
     </form>

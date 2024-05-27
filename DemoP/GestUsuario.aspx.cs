@@ -21,7 +21,7 @@ namespace DemoP
 
         private void BindGridView()
         {
-            string connectionString = "Data Source=DESKTOP-4VRPQJF;Initial Catalog=Queso;Integrated Security=True";
+            string connectionString = "Data Source=localhost;Initial Catalog=Queso;Integrated Security=True";
             string query = "SELECT * FROM Usuarios";
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -43,7 +43,7 @@ namespace DemoP
         {
             int userID = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
 
-            string connectionString = "Data Source=DESKTOP-4VRPQJF;Initial Catalog=Queso;Integrated Security=True";
+            string connectionString = "Data Source=localhost;Initial Catalog=Queso;Integrated Security=True";
             string query = "DELETE FROM Usuarios WHERE ID=@UserID";
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -89,7 +89,7 @@ namespace DemoP
                 string contraseña = txtContraseña.Text;
                 string permisos = txtPermisos.Text;
 
-                string connectionString = "Data Source=DESKTOP-4VRPQJF;Initial Catalog=Queso;Integrated Security=True";
+                string connectionString = "Data Source=localhost;Initial Catalog=Queso;Integrated Security=True";
                 string query = "UPDATE Usuarios SET Nombre=@Nombre, Matricula=@Matricula, Correo=@Correo, Contraseña=@Contraseña, Permisos=@Permisos WHERE ID=@UserID";
 
                 using (SqlConnection con = new SqlConnection(connectionString))
@@ -114,7 +114,7 @@ namespace DemoP
             }
             catch (SqlException ex)
             {
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "Error de permisos", "alert('Solo puedes tener permisos True/False')", true);
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "Error: No cuentas con los permisos para editar los usuarios registrados", "alert('Solo puedes tener permisos True/False')", true);
             }
             }
 

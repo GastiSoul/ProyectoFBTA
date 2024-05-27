@@ -71,11 +71,9 @@
 <body>
     <form id="form1" runat="server">
         <div class="sidebar">
-            <a href="MenuPrincipal.aspx">Inicio</a>
-            <a href="AgregarUsuario.aspx">Agregar Usuario</a>
-            <a href="EditarUsuario.aspx">Editar Usuario</a>
-            <a href="EliminarUsuario.aspx">Eliminar Usuario</a>
-            <a href="GestionUsuarios.aspx">Ver Usuarios</a>
+            <a href="MenuPrincipal.aspx">Volver al Inicio</a>
+            <a href="ReUsuarios.aspx">Registrar Usuario</a>
+            <a href="GestionarNoticias.aspx">Ir a Gestión de Noticias</a>
         </div>
         <div class="content">
             <div class="header-container">

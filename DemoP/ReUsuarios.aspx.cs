@@ -41,7 +41,7 @@ namespace DemoP
             string query = "INSERT INTO Usuarios (Nombre, Matricula, Correo, Contraseña, Permisos) " +
                 "VALUES (@Nombre, @Matricula, @Correo, @Contraseña, @Permisos)";
 
-            using (coneccion = new SqlConnection("Data Source=DESKTOP-4VRPQJF;Initial Catalog=Queso;Integrated Security=True"))
+            using (coneccion = new SqlConnection("Data Source=localhost;Initial Catalog=Queso;Integrated Security=True"))
             {
                 coneccion.Open();
 
@@ -62,7 +62,7 @@ namespace DemoP
                             if (rowsAffected > 0)
                             {
                                 ClientScript.RegisterStartupScript(this.GetType(), "registroExitoso", "alert('Registro exitoso');", true);
-                                Response.Redirect("MenuPrincipal.aspx");
+                                Response.Redirect("GestUsuarios.aspx");
                             }
                             else
                             {

@@ -132,6 +132,13 @@
     <Compile Include="empleados.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="GestNotis.aspx.cs">
+      <DependentUpon>GestNotis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestNotis.aspx.designer.cs">
+      <DependentUpon>GestNotis.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GestUsuario.aspx.cs">
       <DependentUpon>GestUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -179,6 +186,13 @@
     <Compile Include="GestionarNoticias.aspx.designer.cs">
       <DependentUpon>GestionarNoticias.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarNoticias.aspx.cs">
+      <DependentUpon>RegistrarNoticias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarNoticias.aspx.designer.cs">
+      <DependentUpon>RegistrarNoticias.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ReUsuarios.aspx.cs">
       <DependentUpon>ReUsuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -197,6 +211,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="GestionUsuariosprueba.html" />
+    <Content Include="GestNotis.aspx" />
     <Content Include="GestUsuario.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -212,6 +227,8 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Content\Principal.css" />
+    <Content Include="RegistrarNoticias.aspx" />
+    <Content Include="Content\RegistrarNoticias.css" />
     <Content Include="ReUsuarios.aspx" />
     <Content Include="Scripts\Principal.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -219,6 +236,7 @@
     <Content Include="MenuPrincipal.aspx" />
     <Content Include="InicioSesion.aspx" />
     <Content Include="GestionarNoticias.aspx" />
+    <Content Include="WebForm2.aspx" />
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>

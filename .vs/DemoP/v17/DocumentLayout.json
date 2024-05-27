@@ -1,42 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\",
+  "WorkspaceRootPath": "C:\\Users\\eivet\\OneDrive\\Documentos\\GitHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\demop\\content\\principal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\content\\principal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|c:\\users\\eivet\\onedrive\\documentos\\github\\demop\\gestionarnoticias.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\gestionarnoticias.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\demop\\menuprincipal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\menuprincipal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\demop\\registrousuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\registrousuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|c:\\users\\hylia\\downloads\\proyectonoticias\\proyectofbta\\demop\\gestionusuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\gestionusuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\demop\\gestionarnoticias.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|c:\\users\\eivet\\onedrive\\documentos\\github\\demop\\gestionarnoticias.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\gestionarnoticias.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\demop\\estilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\estilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|c:\\users\\eivet\\onedrive\\documentos\\github\\demop\\gestusuario.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\gestusuario.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\demop\\registrousuario.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\registrousuario.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|c:\\users\\eivet\\onedrive\\documentos\\github\\demop\\gestusuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\gestusuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\demop\\iniciosesion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\iniciosesion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\demop\\iniciosesion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\iniciosesion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|c:\\users\\eivet\\onedrive\\documentos\\github\\demop\\menuprincipal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{37159E2C-26E3-4C21-B67F-961308934353}|DemoP\\DemoP.csproj|solutionrelative:demop\\menuprincipal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,115 +38,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GestionarNoticias.aspx",
-              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\GestionarNoticias.aspx",
-              "RelativeDocumentMoniker": "DemoP\\GestionarNoticias.aspx",
-              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\GestionarNoticias.aspx",
-              "RelativeToolTip": "DemoP\\GestionarNoticias.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-22T15:24:19.248Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RegistroUsuario.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\RegistroUsuario.aspx.cs",
-              "RelativeDocumentMoniker": "DemoP\\RegistroUsuario.aspx.cs",
-              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\RegistroUsuario.aspx.cs",
-              "RelativeToolTip": "DemoP\\RegistroUsuario.aspx.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAIwA4AAAAgAAAA",
+              "DocumentIndex": 0,
+              "Title": "GestionarNoticias.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\eivet\\OneDrive\\Documentos\\GitHub\\DemoP\\GestionarNoticias.aspx.cs",
+              "RelativeDocumentMoniker": "DemoP\\GestionarNoticias.aspx.cs",
+              "ToolTip": "C:\\Users\\eivet\\OneDrive\\Documentos\\GitHub\\DemoP\\GestionarNoticias.aspx.cs",
+              "RelativeToolTip": "DemoP\\GestionarNoticias.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T03:10:54.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "InicioSesion.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\InicioSesion.aspx.cs",
-              "RelativeDocumentMoniker": "DemoP\\InicioSesion.aspx.cs",
-              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\InicioSesion.aspx.cs",
-              "RelativeToolTip": "DemoP\\InicioSesion.aspx.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAuwA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T03:04:34.036Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegistroUsuario.aspx",
-              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\RegistroUsuario.aspx",
-              "RelativeDocumentMoniker": "DemoP\\RegistroUsuario.aspx",
-              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\RegistroUsuario.aspx",
-              "RelativeToolTip": "DemoP\\RegistroUsuario.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-22T00:53:26.562Z",
+              "WhenOpened": "2024-05-27T02:23:16.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InicioSesion.aspx",
-              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\InicioSesion.aspx",
-              "RelativeDocumentMoniker": "DemoP\\InicioSesion.aspx",
-              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\InicioSesion.aspx",
-              "RelativeToolTip": "DemoP\\InicioSesion.aspx",
+              "DocumentIndex": 1,
+              "Title": "GestionarNoticias.aspx",
+              "DocumentMoniker": "C:\\Users\\eivet\\OneDrive\\Documentos\\GitHub\\DemoP\\GestionarNoticias.aspx",
+              "RelativeDocumentMoniker": "DemoP\\GestionarNoticias.aspx",
+              "ToolTip": "C:\\Users\\eivet\\OneDrive\\Documentos\\GitHub\\DemoP\\GestionarNoticias.aspx",
+              "RelativeToolTip": "DemoP\\GestionarNoticias.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-22T03:01:55.956Z"
+              "WhenOpened": "2024-05-27T02:23:15.801Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MenuPrincipal.aspx",
-              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\MenuPrincipal.aspx",
-              "RelativeDocumentMoniker": "DemoP\\MenuPrincipal.aspx",
-              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\MenuPrincipal.aspx",
-              "RelativeToolTip": "DemoP\\MenuPrincipal.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-22T01:21:39.179Z",
+              "DocumentIndex": 2,
+              "Title": "GestUsuario.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\eivet\\OneDrive\\Documentos\\GitHub\\DemoP\\GestUsuario.aspx.cs",
+              "RelativeDocumentMoniker": "DemoP\\GestUsuario.aspx.cs",
+              "ToolTip": "C:\\Users\\eivet\\OneDrive\\Documentos\\GitHub\\DemoP\\GestUsuario.aspx.cs",
+              "RelativeToolTip": "DemoP\\GestUsuario.aspx.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAgwG8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T02:22:57.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GestionUsuarios.aspx",
-              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\GestionUsuarios.aspx",
-              "RelativeDocumentMoniker": "DemoP\\GestionUsuarios.aspx",
-              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\GestionUsuarios.aspx",
-              "RelativeToolTip": "DemoP\\GestionUsuarios.aspx",
+              "Title": "GestUsuario.aspx",
+              "DocumentMoniker": "C:\\Users\\eivet\\OneDrive\\Documentos\\GitHub\\DemoP\\GestUsuario.aspx",
+              "RelativeDocumentMoniker": "DemoP\\GestUsuario.aspx",
+              "ToolTip": "C:\\Users\\eivet\\OneDrive\\Documentos\\GitHub\\DemoP\\GestUsuario.aspx",
+              "RelativeToolTip": "DemoP\\GestUsuario.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-22T01:18:11.115Z",
+              "WhenOpened": "2024-05-27T02:22:51.558Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Principal.css",
-              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\Content\\Principal.css",
-              "RelativeDocumentMoniker": "DemoP\\Content\\Principal.css",
-              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\Content\\Principal.css",
-              "RelativeToolTip": "DemoP\\Content\\Principal.css",
-              "ViewState": "AQIAALkAAAAAAAAAAAAowMAAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-24T01:23:58.863Z",
+              "DocumentIndex": 4,
+              "Title": "MenuPrincipal.aspx",
+              "DocumentMoniker": "C:\\Users\\eivet\\OneDrive\\Documentos\\GitHub\\DemoP\\MenuPrincipal.aspx",
+              "RelativeDocumentMoniker": "DemoP\\MenuPrincipal.aspx",
+              "ToolTip": "C:\\Users\\eivet\\OneDrive\\Documentos\\GitHub\\DemoP\\MenuPrincipal.aspx",
+              "RelativeToolTip": "DemoP\\MenuPrincipal.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-27T02:15:04.191Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Estilos.css",
-              "DocumentMoniker": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\Estilos.css",
-              "RelativeDocumentMoniker": "DemoP\\Estilos.css",
-              "ToolTip": "C:\\Users\\hylia\\Downloads\\proyectoNoticias\\ProyectoFBTA\\DemoP\\Estilos.css",
-              "RelativeToolTip": "DemoP\\Estilos.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-22T03:03:37.899Z"
             }
           ]
         }
