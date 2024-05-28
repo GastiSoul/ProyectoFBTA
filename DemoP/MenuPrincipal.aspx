@@ -21,7 +21,7 @@
                 <li>
                     <a href="#">Noticias</a>
                     <ul class="submenu">
-                        <li><a href="RegistrarNoticia.aspx">Registrar noticia</a></li>
+                        <li><a href="RegistrarNoticias.aspx">Registrar noticia</a></li>
                         <li><a href="GestionarNoticias.aspx">Gestionar noticias</a></li>
                     </ul>
                 </li>
