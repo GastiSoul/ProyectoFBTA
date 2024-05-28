@@ -69,6 +69,51 @@ namespace DemoP
         protected global::System.Web.UI.WebControls.DropDownList categoriaU;
 
         /// <summary>
+        /// Control emailCheckbox.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox emailCheckbox;
+
+        /// <summary>
+        /// Control alumnosappCheckBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox alumnosappCheckBox;
+
+        /// <summary>
+        /// Control maestrosappCheckBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox maestrosappCheckBox;
+
+        /// <summary>
+        /// Control alumnosCheckbox.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox alumnosCheckbox;
+
+        /// <summary>
+        /// Control academicosCheckbox.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox academicosCheckbox;
+
+        /// <summary>
         /// Control imagenU.
         /// </summary>
         /// <remarks>

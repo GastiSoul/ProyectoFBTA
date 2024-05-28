@@ -10,7 +10,6 @@
 <body>
     <form id="form1" runat="server">
         <div class="center">
-           
             <ul>
                 <li>
                     <label for="titulo">Título:</label>
@@ -36,6 +35,14 @@
                         <asp:ListItem>Cultura</asp:ListItem>
                         <asp:ListItem>Eventos</asp:ListItem>
                     </asp:DropDownList>
+                </li>
+                <li>
+                    <label>Notificarse en:</label><br />
+                    <asp:CheckBox ID="emailCheckbox" runat="server" Text="Correo Electrónico" /><br />
+                    <asp:CheckBox ID="alumnosappCheckBox" runat="server" Text="App Estudiantes" /><br />
+                    <asp:CheckBox ID="maestrosappCheckBox" runat="server" Text="App Docentes" /><br />
+                    <asp:CheckBox ID="alumnosCheckbox" runat="server" Text="Portal Alumnos" /><br />
+                    <asp:CheckBox ID="academicosCheckbox" runat="server" Text="Portal Academicos" />
                 </li>
                 <li>
                     <label for="imagen">Imagen (URL):</label>
