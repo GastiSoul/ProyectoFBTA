@@ -117,7 +117,7 @@
         
                         <asp:TemplateField HeaderText="Contraseña">
                             <ItemTemplate>
-                                <%# Eval("Contraseña") %>
+                                <%# GetPasswordDisplay(Eval("Contraseña").ToString()) %>
                             </ItemTemplate>
                             <EditItemTemplate>
                                 <asp:TextBox ID="txtContraseña" runat="server" Text='<%# Bind("Contraseña") %>' />
@@ -140,7 +140,6 @@
                 </asp:GridView>
             </div>
         </div>
-    </form>
     </form>
 </body>
 </html>

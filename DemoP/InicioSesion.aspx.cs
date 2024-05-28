@@ -23,7 +23,6 @@ namespace pruebalogin2
                 // Cadena de conexión a la base de datos SQL Server
                 string connectionString = "Server=Localhost;Database=Queso;Trusted_Connection=True;";
 
-
                 string query = "SELECT COUNT(*) FROM Usuarios WHERE Correo=@Correo AND Contraseña=@Contraseña";
 
                 using (SqlConnection con = new SqlConnection(connectionString))
@@ -44,6 +43,25 @@ namespace pruebalogin2
                         else
                         {
                             // Usuario válido, redirigir a la página de inicio
+                            // Verificar los permisos y guardarlos en una variable de sesión
+                            bool usuarioConPermisos = true; // Inicialmente asumimos que el usuario no tiene permisos
+
+                            // Consulta la base de datos para verificar los permisos del usuario
+                            string queryPermisos = "SELECT Permisos FROM Usuarios WHERE Correo=@Correo AND Contraseña=@Contraseña";
+                            using (SqlCommand cmdPermisos = new SqlCommand(queryPermisos, con))
+                            {
+                                cmdPermisos.Parameters.AddWithValue("@Correo", TxtUser.Text);
+                                cmdPermisos.Parameters.AddWithValue("@Contraseña", TxtPassword.Text);
+
+                                // Ejecutar la consulta
+                                object result = cmdPermisos.ExecuteScalar();
+                                if (result != null)
+                                {
+                                    usuarioConPermisos = (bool)result; // Actualizar la variable de acuerdo a los permisos obtenidos
+                                }
+                            }
+
+                            Session["UserHasPermissions"] = usuarioConPermisos; // Establecer los permisos en la sesión
                             Response.Redirect("MenuPrincipal.aspx");
                         }
                     }
