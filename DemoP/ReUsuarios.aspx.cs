@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Data.SqlClient;
-using System.Text.RegularExpressions;
+using System.Web.UI;
 
 namespace DemoP
 {
-    public partial class ReUsuarios : System.Web.UI.Page
+    public partial class ReUsuarios : Page
     {
         protected void Guardar_Click(object sender, EventArgs e)
         {
@@ -60,6 +60,11 @@ namespace DemoP
                     }
                 }
             }
+        }
+
+        protected void VolverAlMenu_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MenuPrincipal.aspx"); // Reemplaza "MenuPrincipal.aspx" con la ruta real de tu página de menú principal
         }
     }
 }
