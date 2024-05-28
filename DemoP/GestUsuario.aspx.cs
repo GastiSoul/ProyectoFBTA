@@ -112,9 +112,10 @@ namespace DemoP
                 GridView1.EditIndex = -1;
                 BindGridView();
             }
-            catch (SqlException ex)
+            finally
             {
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "Error: No cuentas con los permisos para editar los usuarios registrados", "alert('Solo puedes tener permisos True/False')", true);
+                GridView1.EditIndex = -1;
+                BindGridView();
             }
             }
 

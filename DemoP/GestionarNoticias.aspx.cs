@@ -71,29 +71,37 @@ namespace DemoP
 
         protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            int noticiaID = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
-            string titulo = ((TextBox)GridView1.Rows[e.RowIndex].Cells[1].Controls[0]).Text;
-            string fecha = ((TextBox)GridView1.Rows[e.RowIndex].Cells[2].Controls[0]).Text;
-
-            string connectionString = "Data Source=localhost;Initial Catalog=Queso;Integrated Security=True";
-            string query = "UPDATE Noticia SET Titulo=@Titulo, FechaPublicacion=@Fecha WHERE ID=@NoticiaID";
-
-            using (SqlConnection con = new SqlConnection(connectionString))
+            try
             {
-                using (SqlCommand cmd = new SqlCommand(query, con))
+                int noticiaID = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
+                string titulo = ((TextBox)GridView1.Rows[e.RowIndex].Cells[1].Controls[0]).Text;
+                string fecha = ((TextBox)GridView1.Rows[e.RowIndex].Cells[2].Controls[0]).Text;
+
+                string connectionString = "Data Source=localhost;Initial Catalog=Queso;Integrated Security=True";
+                string query = "UPDATE Noticia SET Titulo=@Titulo, FechaPublicacion=@Fecha WHERE ID=@NoticiaID";
+
+                using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    cmd.Parameters.AddWithValue("@Titulo", titulo);
-                    cmd.Parameters.AddWithValue("@FechaPublicacion", fecha);
-                    cmd.Parameters.AddWithValue("@NoticiaID", noticiaID);
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@Titulo", titulo);
+                        cmd.Parameters.AddWithValue("@FechaPublicacion", DateTime.Parse(fecha));
+                        cmd.Parameters.AddWithValue("@NoticiaID", noticiaID);
 
-                    con.Open();
-                    cmd.ExecuteNonQuery();
-                    con.Close();
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                    }
                 }
-            }
 
-            GridView1.EditIndex = -1;
-            BindGridView();
+                GridView1.EditIndex = -1;
+                BindGridView();
+            }
+            finally
+            {
+                GridView1.EditIndex = -1;
+                BindGridView();
+            }
         }
     }
 }

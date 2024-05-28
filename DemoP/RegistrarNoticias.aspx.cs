@@ -6,6 +6,7 @@ namespace DemoP
     public partial class RegistrarNoticias : System.Web.UI.Page
     {
         SqlConnection conexion;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -21,23 +22,23 @@ namespace DemoP
             string imagen = imagenU.Text;
 
             string query = "INSERT INTO Noticia (Titulo, Autor, Cuerpo, FechaPublicacion, Categoria, Imagen) " +
-                "VALUES ( @Titulo, @Autor, @Cuerpo, @FechaPublicacion, @Categoria, @Imagen)";
+                "VALUES (@Titulo, @Autor, @Cuerpo, @FechaPublicacion, @Categoria, @Imagen)";
 
             using (conexion = new SqlConnection("Data Source=localhost;Initial Catalog=Queso;Integrated Security=True"))
             {
-                conexion.Open();
-
-                using (SqlCommand command = new SqlCommand(query, conexion))
+                try
                 {
-                    command.Parameters.AddWithValue("@Titulo", titulo);
-                    command.Parameters.AddWithValue("@Autor", autor);
-                    command.Parameters.AddWithValue("@Cuerpo", cuerpo);
-                    command.Parameters.AddWithValue("@FechaPublicacion", fecha);
-                    command.Parameters.AddWithValue("@Categoria", categoria);
-                    command.Parameters.AddWithValue("@Imagen", imagen);
+                    conexion.Open();
 
-                    try
+                    using (SqlCommand command = new SqlCommand(query, conexion))
                     {
+                        command.Parameters.AddWithValue("@Titulo", titulo);
+                        command.Parameters.AddWithValue("@Autor", autor);
+                        command.Parameters.AddWithValue("@Cuerpo", cuerpo);
+                        command.Parameters.AddWithValue("@FechaPublicacion", DateTime.Parse(fecha));
+                        command.Parameters.AddWithValue("@Categoria", categoria);
+                        command.Parameters.AddWithValue("@Imagen", imagen);
+
                         int rowsAffected = command.ExecuteNonQuery();
 
                         if (rowsAffected > 0)
@@ -50,10 +51,10 @@ namespace DemoP
                             ClientScript.RegisterStartupScript(this.GetType(), "sinFilasInsertadas", "alert('No se insertaron datos en algunas filas');", true);
                         }
                     }
-                    catch (Exception ex)
-                    {
-                        ClientScript.RegisterStartupScript(this.GetType(), "error", $"alert('Error: {ex.Message}');", true);
-                    }
+                }
+                catch (Exception ex)
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "error", $"alert('Error: {ex.Message}');", true);
                 }
             }
         }
