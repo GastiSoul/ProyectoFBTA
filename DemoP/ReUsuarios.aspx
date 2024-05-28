@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Registro de Usuarios</title>
     <link href="Content/RegistroUsuario.css" rel="stylesheet" />
 </head>
@@ -34,8 +34,13 @@
                     </div>
                 </li>
                 <li>
-                    <div class="button">
-                        <asp:Button ID="button" runat="server" Text="Guardar" OnClick="Guardar_Click" />
+                    <div class="button-container">
+                        <div class="button">
+                            <asp:Button ID="button" runat="server" Text="Guardar" OnClick="Guardar_Click" />
+                        </div>
+                        <div class="button">
+                            <asp:Button ID="btnVolver" runat="server" Text="Volver al Menú Principal" OnClick="VolverAlMenu_Click" />
+                        </div>
                     </div>
                 </li>
             </ul>

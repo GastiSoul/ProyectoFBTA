@@ -4,6 +4,9 @@ body {
     color: #FFD700; /* Dorado de la UABC */
     margin: 0;
     padding: 0;
+    display: flex; /* Para alinear elementos en el cuerpo */
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    min-height: 100vh; /* Hace que el cuerpo ocupe como mínimo el 100% de la altura de la ventana */
 }
 
 form {
@@ -37,13 +40,22 @@ label {
     vertical-align: middle;
 }
 
-.button {
-    width: 100%;
-    text-align: center;
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre los botones */
+    align-items: center;
 }
 
-button {
-    margin-left: 0.5em;
+.button {
+    margin-right: 10px; /* Espacio entre los botones */
+}
+
+#button {
+    flex: 1; /* Hace que el botón de Guardar ocupe todo el espacio disponible */
+}
+
+#btnVolver {
+    flex: 1; /* Hace que el botón de Volver al Menú Principal ocupe todo el espacio disponible */
 }
 
 .center {
@@ -89,13 +101,10 @@ button[type="submit"] {
         color: #006633; /* Verde de la UABC */
     }
 
-/* Estilos para la barra de navegación */
+/* Estilos para la barra */
 .footer {
-    background-color: #006633; /* Verde de la UABC */
-    color: #FFD700; /* Dorado de la UABC */
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto; /* Hace que la barra de datos se alinee en la parte inferior */
+    padding: 20px 0; /* Agrega espacio alrededor de la barra */
+    text-align: center; /* Centra el texto en la barra */
+    background-color: #006633; /* Color de fondo de la barra */
 }
