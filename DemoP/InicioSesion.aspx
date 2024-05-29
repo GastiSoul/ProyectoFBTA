@@ -14,7 +14,7 @@
             <img src="https://induccionuabc.wordpress.com/wp-content/uploads/2022/12/escudo-uabc-2022-color-cont.png" alt="Escudo UABC" />
             <p>
                 <label for="TxtUser">Usuario:</label>
-                <asp:TextBox ID="TxtUser" runat="server" placeholder="Usuario"></asp:TextBox>
+                <asp:TextBox ID="TxtUser" runat="server" placeholder="Correo"></asp:TextBox>
             </p>
             <p>
                 <label for="TxtPassword">Contraseña:</label>

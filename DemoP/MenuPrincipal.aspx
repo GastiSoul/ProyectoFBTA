@@ -9,7 +9,9 @@
     <form id="form1" runat="server">
         <div class="header"></div>
         <div class="barra">
-            <h2>Menu</h2>
+            <div class="content">
+             <h2>Gestor de Contenido</h2>
+                </div>
             <ul>
                 <li>
                     <a href="#">Usuarios</a>
