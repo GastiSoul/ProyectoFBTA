@@ -54,7 +54,7 @@ namespace DemoP
                     }
                     catch (SqlException ex)
                     {
-                        if (ex.Number == 2627) // Error de clave duplicada
+                        if (ex.Number == 2627) 
                         {
                             ClientScript.RegisterStartupScript(this.GetType(), "error", "alert('Error: ID EXISTENTE');", true);
                         }
@@ -73,7 +73,7 @@ namespace DemoP
 
         protected void VolverAlMenu_Click(object sender, EventArgs e)
         {
-            Response.Redirect("MenuPrincipal.aspx"); // Reemplaza "MenuPrincipal.aspx" con la ruta real de tu página de menú principal
+            Response.Redirect("MenuPrincipal.aspx"); 
         }
 
         private bool UserHasPermission()
