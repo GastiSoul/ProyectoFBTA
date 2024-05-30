@@ -23,8 +23,7 @@ namespace pruebalogin2
                 // Cadena de conexión a la base de datos SQL Server
                 string connectionString = "Server=Localhost;Database=Queso;Trusted_Connection=True;";
 
-
-                string query = "SELECT COUNT(*) FROM Usuarios WHERE Correo=@Correo AND Contraseña=@Contraseña";
+                string query = "SELECT ID FROM Usuarios WHERE Correo=@Correo AND Contraseña=@Contraseña";
 
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
@@ -35,15 +34,17 @@ namespace pruebalogin2
 
                         con.Open();
 
-                        int count = (int)cmd.ExecuteScalar();
+                        object count = cmd.ExecuteScalar();
 
-                        if (count == 0)
+                        if (count == null)
                         {
                             Response.Write("Usuario o contraseña incorrectos.");
                         }
                         else
                         {
-                            // Usuario válido, redirigir a la página de inicio
+                            string userID = count.ToString();
+                            Session["UserID"] = userID;
+
                             Response.Redirect("MenuPrincipal.aspx");
                         }
                     }

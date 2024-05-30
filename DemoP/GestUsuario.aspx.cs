@@ -63,9 +63,26 @@
 
             protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
             {
-                GridView1.EditIndex = e.NewEditIndex;
-                BindGridView();
+            if (Session["UserID"] != null)
+            {
+                string currentUserID = Session["UserID"].ToString();
+
+                if (UserHasPermission(currentUserID))
+                {
+                    GridView1.EditIndex = e.NewEditIndex;
+                    BindGridView();
+                }
+                else
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('No tienes permisos para editar usuarios.');", true);
+                    e.Cancel = true;
+                }
             }
+            else
+            {
+                Response.Redirect("Login.aspx");
+            }
+        }
 
             protected void GridView1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
             {
@@ -123,5 +140,39 @@
             {
                 return new string('*', password.Length);
             }
+
+        private bool UserHasPermission(string userID)
+        {
+            bool hasPermission = false;
+            string connectionString = "Data Source=localhost;Initial Catalog=Queso;Integrated Security=True";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT Permisos FROM Usuarios WHERE ID = @UserID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserID", userID);
+
+                try
+                {
+                    connection.Open();
+                    object result = command.ExecuteScalar();
+
+                    if (result != null && result != DBNull.Value)
+                    {
+                        hasPermission = Convert.ToBoolean(result);
+                    }
+                    else
+                    {
+                        Console.WriteLine("No se encontró el permiso para el usuario con ID: " + userID);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error al verificar los permisos: " + ex.Message);
+                }
+            }
+
+            return hasPermission;
         }
+    }
     }
