@@ -41,7 +41,6 @@
                 <li>
                     <label for="contraU">Contraseña:</label>
                     <asp:TextBox ID="contraU" runat="server" TextMode="Password" ClientIDMode="Static" placeholder="Contraseña"></asp:TextBox>
-                    <asp:Button ID="btnEditar" runat="server" Text="Editar" OnClientClick="togglePassword(); return false;" />
                 </li>
                 <li>
                     <label for="permiU">Permisos:</label>
