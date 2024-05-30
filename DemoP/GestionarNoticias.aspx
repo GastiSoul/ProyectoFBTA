@@ -62,6 +62,10 @@
         th {
             background-color: #f2f2f2;
         }
+        /* Estilos para la edición */
+        .editRow {
+            background-color: #f0f0f0;
+        }
     </style>
 </head>
 <body>
@@ -84,8 +88,43 @@
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing" OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowUpdating="GridView1_RowUpdating">
                     <Columns>
                         <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" />
-                        <asp:BoundField DataField="Titulo" HeaderText="Título" />
-                        <asp:BoundField DataField="FechaPublicacion" HeaderText="Fecha" />
+                        <asp:TemplateField HeaderText="Título">
+                            <ItemTemplate>
+                                <asp:Label ID="lblTitulo" runat="server" Text='<%# Bind("Titulo") %>'></asp:Label>
+                            </ItemTemplate>
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txtTitulo" runat="server" Text='<%# Bind("Titulo") %>'></asp:TextBox>
+                            </EditItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Cuerpo">
+                            <ItemTemplate>
+                                <asp:Label ID="lblCuerpo" runat="server" Text='<%# Bind("Cuerpo") %>'></asp:Label>
+                            </ItemTemplate>
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txtCuerpo" runat="server" Text='<%# Bind("Cuerpo") %>' TextMode="MultiLine" Rows="5"></asp:TextBox>
+                            </EditItemTemplate>
+                        </asp:TemplateField>
+                          <asp:TemplateField HeaderText="Fecha">
+                            <ItemTemplate>
+                                <asp:Label ID="lblFecha" runat="server" Text='<%# Bind("FechaPublicacion", "{0:yyyy-MM-dd}") %>'></asp:Label>
+                            </ItemTemplate>
+                            <EditItemTemplate>
+                                <asp:Calendar ID="calFecha" runat="server" SelectedDate='<%# Bind("FechaPublicacion") %>'></asp:Calendar>
+                            </EditItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Categoría">
+                            <ItemTemplate>
+                                <asp:Label ID="lblCategoria" runat="server" Text='<%# Bind("Categoria") %>'></asp:Label>
+                            </ItemTemplate>
+                            <EditItemTemplate>
+                                <asp:DropDownList ID="ddlCategoria" runat="server" SelectedValue='<%# Bind("Categoria") %>'>
+                                    <asp:ListItem>Deportes</asp:ListItem>
+                                    <asp:ListItem>Anuncios</asp:ListItem>
+                                    <asp:ListItem>Cultura</asp:ListItem>
+                                    <asp:ListItem>Eventos</asp:ListItem>
+                                </asp:DropDownList>
+                            </EditItemTemplate>
+                        </asp:TemplateField>
                         <asp:TemplateField HeaderText="Acciones">
                             <ItemTemplate>
                                 <asp:LinkButton ID="EditButton" runat="server" CommandName="Edit" Text="Editar" />

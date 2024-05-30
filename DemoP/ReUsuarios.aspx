@@ -6,6 +6,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Registro de Usuarios</title>
     <link href="Content/RegistroUsuario.css" rel="stylesheet" />
+    <script type="text/javascript">
+        function togglePassword() {
+            var passwordField = document.getElementById('<%= contraU.ClientID %>');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        }
+
+        window.onload = function() {
+            var passwordField = document.getElementById('<%= contraU.ClientID %>');
+            passwordField.type = 'password';
+        };
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -25,7 +40,8 @@
                 </li>
                 <li>
                     <label for="contraU">Contraseña:</label>
-                    <asp:TextBox ID="contraU" runat="server" TextMode="Password" placeholder="Contraseña"></asp:TextBox>
+                    <asp:TextBox ID="contraU" runat="server" TextMode="Password" ClientIDMode="Static" placeholder="Contraseña"></asp:TextBox>
+                    <asp:Button ID="btnEditar" runat="server" Text="Editar" OnClientClick="togglePassword(); return false;" />
                 </li>
                 <li>
                     <label for="permiU">Permisos:</label>

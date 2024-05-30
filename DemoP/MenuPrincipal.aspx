@@ -65,9 +65,9 @@
         <div class="footer">
             <div class="footer-links">
                 <a href="https://www.uabc.mx" target="_blank">UABC</a>
-                <a href="https://www.uabc.mx/alumnos" target="_blank">Alumnos</a>
-                <a href="https://www.uabc.mx/docentes" target="_blank">Docentes</a>
-                <a href="https://www.uabc.mx/contacto" target="_blank">Contacto</a>
+                <a href="https://alumnos.uabc.mx/web/alumnos/bienvenido" target="_blank">Alumnos</a>
+                <a href="https://academicos.uabc.mx/web/guest/home" target="_blank">Docentes</a>
+                <a href="https://www.facebook.com/UABCInstitucional/" target="_blank">Facebook</a>
             </div>
         </div>
         <div class="footer"></div>

@@ -74,18 +74,22 @@ namespace DemoP
             try
             {
                 int noticiaID = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
-                string titulo = ((TextBox)GridView1.Rows[e.RowIndex].Cells[1].Controls[0]).Text;
-                string fecha = ((TextBox)GridView1.Rows[e.RowIndex].Cells[2].Controls[0]).Text;
+                string titulo = ((TextBox)GridView1.Rows[e.RowIndex].FindControl("txtTitulo")).Text;
+                string cuerpo = ((TextBox)GridView1.Rows[e.RowIndex].FindControl("txtCuerpo")).Text;
+                string fecha = ((Calendar)GridView1.Rows[e.RowIndex].FindControl("calFecha")).SelectedDate.ToString("yyyy-MM-dd");
+                string categoria = ((DropDownList)GridView1.Rows[e.RowIndex].FindControl("ddlCategoria")).SelectedValue;
 
                 string connectionString = "Data Source=localhost;Initial Catalog=Queso;Integrated Security=True";
-                string query = "UPDATE Noticia SET Titulo=@Titulo, FechaPublicacion=@Fecha WHERE ID=@NoticiaID";
+                string query = "UPDATE Noticia SET Titulo=@Titulo, Cuerpo=@Cuerpo, FechaPublicacion=@Fecha, Categoria=@Categoria WHERE ID=@NoticiaID";
 
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.Parameters.AddWithValue("@Titulo", titulo);
-                        cmd.Parameters.AddWithValue("@FechaPublicacion", DateTime.Parse(fecha));
+                        cmd.Parameters.AddWithValue("@Cuerpo", cuerpo);
+                        cmd.Parameters.AddWithValue("@Fecha", DateTime.Parse(fecha));
+                        cmd.Parameters.AddWithValue("@Categoria", categoria);
                         cmd.Parameters.AddWithValue("@NoticiaID", noticiaID);
 
                         con.Open();

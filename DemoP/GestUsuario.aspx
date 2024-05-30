@@ -95,15 +95,13 @@
                             </EditItemTemplate>
                         </asp:TemplateField>
 
-                         <asp:TemplateField HeaderText="Matrícula">
-
+                        <asp:TemplateField HeaderText="Matrícula">
                             <ItemTemplate>
                                 <%# Eval("Matricula") %>
                             </ItemTemplate>
                             <EditItemTemplate>
                                 <asp:TextBox ID="txtMatricula" runat="server" Text='<%# Bind("Matricula") %>' />
                             </EditItemTemplate>
-
                         </asp:TemplateField>
 
                         <asp:TemplateField HeaderText="Correo">
@@ -114,13 +112,13 @@
                                 <asp:TextBox ID="txtCorreo" runat="server" Text='<%# Bind("Correo") %>' />
                             </EditItemTemplate>
                         </asp:TemplateField>
-        
+
                         <asp:TemplateField HeaderText="Contraseña">
                             <ItemTemplate>
-                                <%# Eval("Contraseña") %>
+                                <%# GetPasswordDisplay(Eval("Contraseña").ToString()) %>
                             </ItemTemplate>
                             <EditItemTemplate>
-                                <asp:TextBox ID="txtContraseña" runat="server" Text='<%# Bind("Contraseña") %>' />
+                                <asp:TextBox ID="txtContraseña" runat="server" Text='<%# Bind("Contraseña") %>' TextMode="Password" />
                             </EditItemTemplate>
                         </asp:TemplateField>
 
@@ -132,15 +130,13 @@
                                 <asp:TextBox ID="txtPermisos" runat="server" Text='<%# Bind("Permisos") %>' />
                             </EditItemTemplate>
                         </asp:TemplateField>
-                        
+
                         <asp:CommandField ShowEditButton="True" />
                         <asp:ButtonField CommandName="Delete" Text="Eliminar" />
-                    
                     </Columns>
                 </asp:GridView>
             </div>
         </div>
-    </form>
     </form>
 </body>
 </html>
