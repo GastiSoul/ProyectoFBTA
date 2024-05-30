@@ -36,19 +36,19 @@
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
                     <img src="img/img1.jpg" style="width:100%">
-                    <div class="text">Caption Text</div>
+                    <div class="text">Facultad de Ingenieria</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
                     <img src="img/img2.jfif" style="width:100%">
-                    <div class="text">Caption Two</div>
+                    <div class="text">Rectoria UABC</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
                     <img src="img/img3.jfif" style="width:100%">
-                    <div class="text">Caption Three</div>
+                    <div class="text">Estudiantes de la UABC</div>
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
