@@ -41,25 +41,42 @@
 
             protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
             {
-                int userID = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
+            if (Session["UserID"] != null)
+            {
+                string currentUserID = Session["UserID"].ToString();
 
-                string connectionString = "Data Source=localhost;Initial Catalog=Queso;Integrated Security=True";
-                string query = "DELETE FROM Usuarios WHERE ID=@UserID";
-
-                using (SqlConnection con = new SqlConnection(connectionString))
+                if (UserHasPermission(currentUserID))
                 {
-                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    int userID = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
+
+                    string connectionString = "Data Source=localhost;Initial Catalog=Queso;Integrated Security=True";
+                    string query = "DELETE FROM Usuarios WHERE ID=@UserID";
+
+                    using (SqlConnection con = new SqlConnection(connectionString))
                     {
-                        cmd.Parameters.AddWithValue("@UserID", userID);
+                        using (SqlCommand cmd = new SqlCommand(query, con))
+                        {
+                            cmd.Parameters.AddWithValue("@UserID", userID);
 
-                        con.Open();
-                        cmd.ExecuteNonQuery();
-                        con.Close();
+                            con.Open();
+                            cmd.ExecuteNonQuery();
+                            con.Close();
+                        }
                     }
-                }
 
-                BindGridView(); 
+                    BindGridView();
+                }
+                else
+                {
+                    // Mostrar un mensaje de error
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('No tienes permisos para eliminar usuarios.');", true);
+                }
             }
+            else
+            {
+                Response.Redirect("InicioSesion.aspx");
+            }
+        }
 
             protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
             {

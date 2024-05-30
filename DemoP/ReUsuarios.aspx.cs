@@ -6,6 +6,15 @@ namespace DemoP
 {
     public partial class ReUsuarios : Page
     {
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+            if (!UserHasPermission())
+            {
+                Response.Redirect("MenuPrincipal.aspx"); 
+            }
+        }
         protected void Guardar_Click(object sender, EventArgs e)
         {
             string nombre = nameU.Text;
@@ -65,6 +74,41 @@ namespace DemoP
         protected void VolverAlMenu_Click(object sender, EventArgs e)
         {
             Response.Redirect("MenuPrincipal.aspx"); // Reemplaza "MenuPrincipal.aspx" con la ruta real de tu página de menú principal
+        }
+
+        private bool UserHasPermission()
+        {
+            string userID = Session["UserID"] as string;
+            bool hasPermission = false;
+            string connectionString = "Data Source=localhost;Initial Catalog=Queso;Integrated Security=True";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT Permisos FROM Usuarios WHERE ID = @UserID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserID", userID);
+
+                try
+                {
+                    connection.Open();
+                    object result = command.ExecuteScalar();
+
+                    if (result != null && result != DBNull.Value)
+                    {
+                        hasPermission = Convert.ToBoolean(result);
+                    }
+                    else
+                    {
+                        Console.WriteLine("No se encontró el permiso para el usuario con ID: " + userID);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error al verificar los permisos: " + ex.Message);
+                }
+            }
+
+            return hasPermission;
         }
     }
 }
